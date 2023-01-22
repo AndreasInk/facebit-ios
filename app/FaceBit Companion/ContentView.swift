@@ -31,12 +31,19 @@ struct ContentView: View {
                     Text("My FaceBit")
                 }
             
-            Text("My Insights")
-                .font(.headline)
+            if #available(iOS 16.0, *) {
+                InsightsView()
+                    .tabItem {
+                        Image(systemName: "chart.bar.xaxis")
+                        Text("Insights")
+                    }
+            } else {
+                Text("My Insights")
                 .tabItem {
                     Image(systemName: "chart.bar.xaxis")
                     Text("Insights")
                 }
+            }
             
             SettingsView()
                 .font(.headline)

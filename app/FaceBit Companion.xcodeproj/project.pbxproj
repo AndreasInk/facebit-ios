@@ -88,6 +88,16 @@
 		01F5FCFD2603A9FF00522884 /* FaceBitDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5FCFC2603A9FF00522884 /* FaceBitDetailsViewModel.swift */; };
 		01FAB92525B09400009E5B72 /* FaceBitPerpherial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAB92425B09400009E5B72 /* FaceBitPerpherial.swift */; };
 		62E39C1363EDD2E412190BA9 /* TimeSeriesDataReadDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627F500FF65BB21C9B8C2101 /* TimeSeriesDataReadDetailed.swift */; };
+		E1960201297D32C10069F8A9 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 013B00E525BB4B1C00319A42 /* ACarousel */; };
+		E1960202297D32C10069F8A9 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 0103210825FA951B00EC81B4 /* GRDB */; };
+		E1960203297D32C10069F8A9 /* SwiftUIRefresh in Frameworks */ = {isa = PBXBuildFile; productRef = 016CC98F26026B3D00B691C5 /* SwiftUIRefresh */; };
+		E1960205297D35110069F8A9 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1960204297D35110069F8A9 /* InsightsView.swift */; };
+		E1960207297D35EE0069F8A9 /* InsightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1960206297D35EE0069F8A9 /* InsightsViewModel.swift */; };
+		E1960209297D371B0069F8A9 /* InsightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1960208297D371B0069F8A9 /* InsightData.swift */; };
+		E196020B297D3A7A0069F8A9 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E196020A297D3A7A0069F8A9 /* Array+Extension.swift */; };
+		E196020D297D3C8E0069F8A9 /* InsightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E196020C297D3C8E0069F8A9 /* InsightDetailView.swift */; };
+		E196020F297D41B90069F8A9 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E196020E297D41B90069F8A9 /* Color+Extension.swift */; };
+		E1960211297D43070069F8A9 /* ResearchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1960210297D43070069F8A9 /* ResearchCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +206,13 @@
 		01FAB92025B090FA009E5B72 /* FaceBit Companion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FaceBit Companion.entitlements"; sourceTree = "<group>"; };
 		01FAB92425B09400009E5B72 /* FaceBitPerpherial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBitPerpherial.swift; sourceTree = "<group>"; };
 		627F500FF65BB21C9B8C2101 /* TimeSeriesDataReadDetailed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeSeriesDataReadDetailed.swift; path = "GRDB Tables/TimeSeriesDataReadDetailed.swift"; sourceTree = "<group>"; };
+		E1960204297D35110069F8A9 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		E1960206297D35EE0069F8A9 /* InsightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewModel.swift; sourceTree = "<group>"; };
+		E1960208297D371B0069F8A9 /* InsightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightData.swift; sourceTree = "<group>"; };
+		E196020A297D3A7A0069F8A9 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		E196020C297D3C8E0069F8A9 /* InsightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightDetailView.swift; sourceTree = "<group>"; };
+		E196020E297D41B90069F8A9 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E1960210297D43070069F8A9 /* ResearchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +220,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1960203297D32C10069F8A9 /* SwiftUIRefresh in Frameworks */,
+				E1960202297D32C10069F8A9 /* GRDB in Frameworks */,
+				E1960201297D32C10069F8A9 /* ACarousel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				010862CD25B6122600EAF722 /* Logger.swift */,
+				E196020E297D41B90069F8A9 /* Color+Extension.swift */,
+				E196020A297D3A7A0069F8A9 /* Array+Extension.swift */,
 				013B00CC25BB2B6400319A42 /* FaceBit+Bundle.swift */,
 				013B00ED25BB517A00319A42 /* FaceBit+String.swift */,
 				0100B4D025D7243600898C05 /* UInt+Extension.swift */,
@@ -280,6 +302,9 @@
 			isa = PBXGroup;
 			children = (
 				012C91B325B1ECFE00274F82 /* LiveLinePlot.swift */,
+				E1960204297D35110069F8A9 /* InsightsView.swift */,
+				E196020C297D3C8E0069F8A9 /* InsightDetailView.swift */,
+				E1960210297D43070069F8A9 /* ResearchCardView.swift */,
 			);
 			path = Visualizations;
 			sourceTree = "<group>";
@@ -294,6 +319,7 @@
 				016CC9AF260282C000B691C5 /* TimeSeriesMeasurementDetailed.swift */,
 				016CC9BA260283F100B691C5 /* EventDetailed.swift */,
 				627F500FF65BB21C9B8C2101 /* TimeSeriesDataReadDetailed.swift */,
+				E1960208297D371B0069F8A9 /* InsightData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -428,6 +454,7 @@
 				0149441425D838B100FB3DEF /* MetricViewModel.swift */,
 				01004AC325C997A4006F5670 /* TimeSeriesMeasurementViewModel.swift */,
 				018F821725D576610037C5BE /* RespitoryClassifierViewModel.swift */,
+				E1960206297D35EE0069F8A9 /* InsightsViewModel.swift */,
 				01E9278125D9AD0D00873BD8 /* MaskViewModel.swift */,
 				01AB3B9625FBF7B50027C918 /* MyFaceBitViewModel.swift */,
 				01BC52E126010DD400040149 /* DataViewerViewModel.swift */,
@@ -502,9 +529,9 @@
 			);
 			name = "FaceBit Companion";
 			packageProductDependencies = (
-				013B00E525BB4B1C00319A42,
-				0103210825FA951B00EC81B4,
-				016CC98F26026B3D00B691C5,
+				013B00E525BB4B1C00319A42 /* ACarousel */,
+				0103210825FA951B00EC81B4 /* GRDB */,
+				016CC98F26026B3D00B691C5 /* SwiftUIRefresh */,
 			);
 			productName = "FaceBit Companion";
 			productReference = 015F992F25AE493500BDD672 /* FaceBit Companion.app */;
@@ -578,9 +605,9 @@
 			);
 			mainGroup = 015F992625AE493500BDD672;
 			packageReferences = (
-				013B00E425BB4B1C00319A42,
-				0103210725FA951B00EC81B4,
-				016CC98E26026B3D00B691C5,
+				013B00E425BB4B1C00319A42 /* XCRemoteSwiftPackageReference "ACarousel" */,
+				0103210725FA951B00EC81B4 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				016CC98E26026B3D00B691C5 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */,
 			);
 			productRefGroup = 015F993025AE493500BDD672 /* Products */;
 			projectDirPath = "";
@@ -636,7 +663,9 @@
 				015F993325AE493500BDD672 /* FaceBit_CompanionApp.swift in Sources */,
 				018F822B25D5C3390037C5BE /* RespiratoryClsWidgetView.swift in Sources */,
 				0100B4D125D7243600898C05 /* UInt+Extension.swift in Sources */,
+				E1960209297D371B0069F8A9 /* InsightData.swift in Sources */,
 				01325D3B25C35196000B2A05 /* ShareDatabaseButtonView.swift in Sources */,
+				E196020D297D3C8E0069F8A9 /* InsightDetailView.swift in Sources */,
 				016CC9AB2602829C00B691C5 /* MetricMeasurementDetailed.swift in Sources */,
 				016896162601A6E400F48A82 /* DataListView.swift in Sources */,
 				0149441525D838B100FB3DEF /* MetricViewModel.swift in Sources */,
@@ -651,7 +680,9 @@
 				013B00CD25BB2B6400319A42 /* FaceBit+Bundle.swift in Sources */,
 				01E9277D25D99D2500873BD8 /* View+Extension.swift in Sources */,
 				01AEF895260D4A9500D6D2E0 /* GRDB+Extension.swift in Sources */,
+				E1960205297D35110069F8A9 /* InsightsView.swift in Sources */,
 				0100B4EF25D7996900898C05 /* MaskWearTimeWidget.swift in Sources */,
+				E1960211297D43070069F8A9 /* ResearchCardView.swift in Sources */,
 				013B00D225BB315C00319A42 /* FaceBitNotificationView.swift in Sources */,
 				01AB3B8A25FBD9B00027C918 /* MetricMeasurement.swift in Sources */,
 				010C67A925BB9FEC00E0EF01 /* WidgetView.swift in Sources */,
@@ -661,6 +692,7 @@
 				015F996425AE49A000BDD672 /* BluetoothConnectionManager.swift in Sources */,
 				010862CE25B6122600EAF722 /* Logger.swift in Sources */,
 				0100B4E725D7907300898C05 /* PrimaryButton.swift in Sources */,
+				E196020F297D41B90069F8A9 /* Color+Extension.swift in Sources */,
 				01AB3B8025FBD1780027C918 /* Timestamp.swift in Sources */,
 				01325D4025C35BC5000B2A05 /* GenericEventRecordingView.swift in Sources */,
 				01EDBE7825B74604009505DC /* MyFaceBitMainView.swift in Sources */,
@@ -697,7 +729,9 @@
 				016CC9C02602852C00B691C5 /* ShareUtil.swift in Sources */,
 				01E9278225D9AD0D00873BD8 /* MaskViewModel.swift in Sources */,
 				016CC97826024EA800B691C5 /* EventListView.swift in Sources */,
+				E196020B297D3A7A0069F8A9 /* Array+Extension.swift in Sources */,
 				019754EF25C499D300211FE9 /* PurgeDatabaseButtonView.swift in Sources */,
+				E1960207297D35EE0069F8A9 /* InsightsViewModel.swift in Sources */,
 				016CC97D260259AB00B691C5 /* TimeSeriesMeasurementSummaryView.swift in Sources */,
 				0103210E25FA97A100EC81B4 /* AppDatabase.swift in Sources */,
 				62E39C1363EDD2E412190BA9 /* TimeSeriesDataReadDetailed.swift in Sources */,
@@ -1032,7 +1066,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0103210725FA951B00EC81B4 = {
+		0103210725FA951B00EC81B4 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/groue/GRDB.swift.git";
 			requirement = {
@@ -1040,7 +1074,7 @@
 				minimumVersion = 5.5.0;
 			};
 		};
-		013B00E425BB4B1C00319A42 = {
+		013B00E425BB4B1C00319A42 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/JWAutumn/ACarousel";
 			requirement = {
@@ -1048,7 +1082,7 @@
 				minimumVersion = 0.2.0;
 			};
 		};
-		016CC98E26026B3D00B691C5 = {
+		016CC98E26026B3D00B691C5 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/timbersoftware/SwiftUIRefresh.git";
 			requirement = {
@@ -1059,19 +1093,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0103210825FA951B00EC81B4 = {
+		0103210825FA951B00EC81B4 /* GRDB */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0103210725FA951B00EC81B4;
+			package = 0103210725FA951B00EC81B4 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
 			productName = GRDB;
 		};
-		013B00E525BB4B1C00319A42 = {
+		013B00E525BB4B1C00319A42 /* ACarousel */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 013B00E425BB4B1C00319A42;
+			package = 013B00E425BB4B1C00319A42 /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
 		};
-		016CC98F26026B3D00B691C5 = {
+		016CC98F26026B3D00B691C5 /* SwiftUIRefresh */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 016CC98E26026B3D00B691C5;
+			package = 016CC98E26026B3D00B691C5 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */;
 			productName = SwiftUIRefresh;
 		};
 /* End XCSwiftPackageProductDependency section */
