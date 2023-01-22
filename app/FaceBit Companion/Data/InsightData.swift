@@ -27,7 +27,7 @@ struct Research: Identifiable {
     var imageLink: String
 }
 extension Research {
-    static let demo = Research(title: "FaceBit: Smart Face Masks Platform", description: "", link: "https://dl.acm.org/doi/10.1145/3494991", imageLink: "https://facebit.health/images/facebit_web_figure.png")
+    static let demo = Research(title: "FaceBit: Smart Face Masks Platform", description: "The COVID-19 pandemic has dramatically increased the use of face masks across the world. Face masks are passive devices, however, and cannot alert the user in case of improper fit or mask degradation.", link: "https://dl.acm.org/doi/10.1145/3494991", imageLink: "https://facebit.health/images/facebit_web_figure.png")
 }
 enum InsightType {
     case LineChart

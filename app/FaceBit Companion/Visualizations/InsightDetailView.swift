@@ -13,32 +13,46 @@ struct InsightDetailView: View {
     @State var insight: InsightData
     var body: some View {
         ScrollView {
-            switch insight.type {
-            case .LineChart:
-                Chart(insight.data) { data in
-                    LineMark(x: .value("", data.startDate),
-                             y: .value(data.eventType.readableString, data.eventType.readableString))
+            VStack(spacing: 25) {
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(insight.title)
+                            .font(.title)
+                        Spacer()
+                    }
+                    Text(insight.description)
+                        .font(.caption)
+                        .padding(.top)
                 }
-            case .BarChart:
-                
-                Chart(insight.data) { data in
-                    BarMark(x: .value("", data.eventType.readableString),
-                            y: .value("Event Count", 1))
-                    .foregroundStyle(by: .value("", data.eventType.readableString))
-                }
-                .chartForegroundStyleScale(range: Color.primaries)
-                .chartLegend(.visible)
-                .chartXAxis(.hidden)
                 .padding()
+                switch insight.type {
+                case .LineChart:
+                    Chart(insight.data) { data in
+                        BarMark(x: .value("", data.startDate),
+                                 y: .value("Event Count", 1))
+                    }
+                case .BarChart:
+                    
+                    Chart(insight.data) { data in
+                        BarMark(x: .value("", data.eventType.readableString),
+                                y: .value("Event Count", 1))
+                        .foregroundStyle(by: .value("", data.eventType.readableString))
+                    }
+                    .chartForegroundStyleScale(range: Color.primaries)
+                    .chartLegend(.visible)
+                    .chartXAxis(.hidden)
+                    .padding()
+                    
+                    
+                    
+                    
+                    
+                default:
+                    EmptyView()
+                }
                 
-                
-                
-                
-                
-            default:
-                EmptyView()
+                ResearchCardView(insight: insight)
             }
-            ResearchCardView(insight: insight)
             Spacer(minLength: 75)
         }
     }

@@ -13,14 +13,17 @@ struct InsightsView: View {
     @StateObject var insightsViewModel = InsightsViewModel()
     
     var body: some View {
-        TabView {
-            ForEach(insightsViewModel.insights, id: \.id) { insight in
-                InsightDetailView(insight: insight)
+        NavigationStack {
+            TabView {
+                ForEach(insightsViewModel.insights, id: \.id) { insight in
+                    InsightDetailView(insight: insight)
+                }
             }
+            .tabViewStyle(.page(indexDisplayMode: .always))
+            .indexViewStyle(.page(backgroundDisplayMode: .always))
+            .navigationTitle("Insights")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .tabViewStyle(.page(indexDisplayMode: .always))
-        .indexViewStyle(.page(backgroundDisplayMode: .always))
-        
     }
 }
 

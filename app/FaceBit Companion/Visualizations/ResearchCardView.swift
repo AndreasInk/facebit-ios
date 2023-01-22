@@ -11,26 +11,40 @@ import SwiftUI
 struct ResearchCardView: View {
     let insight: InsightData
     var body: some View {
-        HStack {
-            if let research = insight.research {
+        if let research = insight.research {
+            Link(destination: URL(string: research.link)!) {
                 
-                
-                AsyncImage(url: URL(string: research.imageLink)!, scale: 1) { image in
-                    image.image?.resizable()
-                }
-                
-                    .frame(width: 200, height: 200)
+                HStack {
+                    
+                    VStack(alignment: .leading) {
+                        Text(research.title)
+                            .font(.headline)
+                        Text(research.description)
+                            .font(.caption)
+                            .padding([.top, .trailing])
+                    }
+                    .padding()
+                    .multilineTextAlignment(.leading)
+                    AsyncImage(url: URL(string: research.imageLink)!, scale: 1) { image in
+                        image.image?
+                            .resizable()
+                            .padding(.leading)
+                    }
+                    
+                    .frame(width: 90, height: 90)
                     .scaledToFit()
-                Text(research.title)
-                    .font(.headline)
-                Text(research.description)
-                    .font(.headline)
+                }
+                .padding()
+                .background {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.primaryWhite)
+                        .shadow(color: .primaryWhite.opacity(0.4), radius: 10)
+                        .padding()
+                }
             }
-            
         }
     }
 }
-
 @available(iOS 15.0, *)
 struct ResearchCardView_Previews: PreviewProvider {
     static var previews: some View {
